@@ -1,6 +1,7 @@
 import discord
 from currency_functions import eur, usd
 from filter_functions import add_filter, rmv_filter, create_file
+from system_functions import allowed_roles_write
 from discord.ext.commands import Bot
 
 
@@ -25,15 +26,14 @@ async def filter_word(message):
     with open('chat_filter.txt', 'r') as chat_file:
         chat_filter = chat_file.read()
         chat_filter = chat_filter.split(' ')
-    '''Problem jest z tablica stringow. Moze odczytywac wartosci rol z pliku? Wczesniej zapisujac wartosci
-    rol do pliku?'''
-    allowed_role = '458751363849912320' # Admin
-    if allowed_role in [role.id for role in message.author.roles]:
-        return
+    allowed_role = ['458751363849912320', '458714226089918477'] # Admin, Bot
+    for role in message.author.roles:
+        if role.id in allowed_role:
+            return
     else:
-        contents = message.content.split (" ")  # Dzieli zdanie na slowa
+        contents = message.content.split (" ")
         for word in contents:
-            if word.upper ( ) in chat_filter:
+            if word.upper() in chat_filter:
                 await client.delete_message(message)
                 await client.send_message(message.channel, '**Message was deleted**')
 # ------------------------------------------------------------
@@ -48,7 +48,9 @@ async def music_player(message):
     url = message.content.split(' ')
     url = url[-1]
     player = await voice.create_ytdl_player(url)
-    player.start ( )
+    player.volume = 0.5
+    player.start()
+
 
 # -------------------------------------------------------------
 
@@ -73,7 +75,8 @@ async def on_message(message):
         await client.send_message (message.channel, rmv_filter(message))
     elif message.content.startswith('?play'):
         await music_player(message)
-    elif message.content.startswith('?stop'):
-        pass
+    elif message.content.startswith('?allow'):
+        await client.send_message (message.channel, allowed_roles_write(message))
+
 
 client.run('NDU4MDMzMDg4Nzc4NDY5Mzc2.DghwEw.9fGYGoSysCbQzlHXVftLKJBWRuU')
