@@ -1,34 +1,36 @@
+from system_functions import split_message
+
+
 def add_filter(message):
-    allowed_role = '458751363849912320' # Admin
-    if allowed_role in [role.id for role in message.author.roles]:
-        f = message.content.split(' ')
-        l_filtra = f[-1]
-        with open ('chat_filter.txt', 'a') as file:
-            file.write(l_filtra)
-            file.write(' ')
-        return 'Word {} has been added to filter list'.format(l_filtra)
-    else:
-        return "You don't have permission to do that."
+    allowed_role = ['458751363849912320', '458714226089918477'] # Admin, Bot
+    for role in message.author.roles:
+        if role.id in allowed_role:
+            filter_word = split_message(message)
+            with open ('chat_filter.txt', 'a') as file:
+                file.write(filter_word)
+                file.write(' ')
+            return 'Word {} has been added to filter list'.format(filter_word)
+    return 'No permissions'
 
 
 def rmv_filter(message):
-    f = message.content.split(' ')
-    remove_word = f[-1]
+    remove_word = split_message(message)
 
-    allowed_role = '458751363849912320' # Admin
+    allowed_role = ['458751363849912320', '458714226089918477'] # Admin, Bot
+    for role in message.author.roles:
+        if role.id in allowed_role:
+            with open('chat_filter.txt', 'r') as file:
+                removal_list = file.readline()
+            removal_list = removal_list.split(' ')
 
-    if allowed_role in [role.id for role in message.author.roles]:
-        with open('chat_filter.txt', 'r') as file:
-            removal_list = file.readline()
-        removal_list = removal_list.split(' ')
+            for x in removal_list:
+                if x == remove_word:
+                    removal_list.remove(x)
 
-        for x in removal_list:
-            if x == remove_word:
-                removal_list.remove(x)
-
-        with open('chat_filter.txt', 'w') as file:
-            file.writelines(removal_list)
-    return 'Word has been deleted from filter list'
+            with open('chat_filter.txt', 'w') as file:
+                file.writelines(removal_list)
+            return 'Word {} has been deleted from filter list'.format(remove_word)
+    return 'No permissions'
 
 
 def create_file():
