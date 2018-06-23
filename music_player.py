@@ -9,13 +9,14 @@ class MusicBot:
         self.volume = 0.4
 
     async def start(self):
+        '''Polaczyc playera i que. Zrobic w petli zmiane url i teorytycznie bedzie kolejka'''
         voice = await self.client.join_voice_channel(self.channel)
         player = await voice.create_ytdl_player(self.url)
         player.volume = self.volume
         player.start()
 
-    def queue(self, message):
-        item_in_queue = split_message(message)
+
+
 
 
 

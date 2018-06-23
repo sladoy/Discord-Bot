@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a78d346c-9a4e-4b10-aa26-70a4656824e4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/help.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/currency_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/filter_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/role_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/role_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/system_functions.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +20,7 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
+            <state relative-caret-position="221">
               <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -37,8 +32,8 @@
       <file leaf-file-name="music_player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/music_player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="187">
+              <caret line="11" column="90" selection-start-line="11" selection-start-column="90" selection-end-line="11" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -46,7 +41,7 @@
       <file leaf-file-name="system_functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+            <state relative-caret-position="510">
               <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
@@ -58,7 +53,7 @@
       <file leaf-file-name="currency_functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/currency_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="785">
+            <state relative-caret-position="935">
               <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
             </state>
           </provider>
@@ -68,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/role_functions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1258">
-              <caret line="74" column="12" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+              <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -121,8 +116,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="539" />
-    <option name="y" value="79" />
+    <option name="x" value="177" />
+    <option name="y" value="68" />
     <option name="width" value="1208" />
     <option name="height" value="941" />
   </component>
@@ -284,7 +279,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="539" y="79" width="1208" height="941" extended-state="0" />
+    <frame x="177" y="68" width="1208" height="941" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25083894" />
@@ -548,7 +543,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/currency_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="785">
+        <state relative-caret-position="935">
           <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
         </state>
       </provider>
@@ -557,15 +552,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
+        <state relative-caret-position="510">
           <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
@@ -576,13 +568,13 @@
     <entry file="file://$PROJECT_DIR$/role_functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
-          <caret line="74" column="12" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="221">
           <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -599,8 +591,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/music_player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="187">
+          <caret line="11" column="90" selection-start-line="11" selection-start-column="90" selection-end-line="11" selection-end-column="90" />
         </state>
       </provider>
     </entry>
