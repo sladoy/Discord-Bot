@@ -1,21 +1,23 @@
-
-def split_message(message):
-    splitted_message = message.content.split(' ')
-    word = splitted_message[-1]
-    return word
+from role_functions import load_allowed_role, split_message
+import json
 
 
 async def filter_word(client, message):
-    f = open('chat_filter.txt', 'a')
-    f.close()
-    with open('chat_filter.txt', 'r') as chat_file:
-        chat_filter = chat_file.read()
-        chat_filter = chat_filter.split(' ')
-    allowed_role = ['458751363849912320', '458714226089918477'] # Admin, Bot
-    for role in message.author.roles:
-        if role.id in allowed_role:
-            return
+
+    try:
+        with open('chat_filter.json', 'r') as chat_file:
+            chat_filter = json.load(chat_file)
+
+    except FileNotFoundError:
+        with open('chat_filter.json', 'w+') as file:
+            json.dump([], file)
+
     else:
+        allowed_role = load_allowed_role()
+        for role in message.author.roles:
+            if role.id in allowed_role:
+                return
+
         contents = message.content.split (" ")
         for word in contents:
             if word.upper() in chat_filter:
@@ -24,32 +26,52 @@ async def filter_word(client, message):
 
 
 def add_filter(message):
-    allowed_role = ['458751363849912320', '458714226089918477'] # Admin, Bot
-    for role in message.author.roles:
+    allowed_role = load_allowed_role()
+    for role in message.server.roles:
         if role.id in allowed_role:
             filter_word = split_message(message)
-            with open ('chat_filter.txt', 'a') as file:
-                file.write(filter_word + ' ')
-            return 'Word {} has been added to filter list'.format(filter_word)
+
+            try:
+                with open('chat_filter.json', 'r') as file:
+                    data = json.load(file)
+            except json.decoder.JSONDecodeError:
+                with open('chat_filter.json', 'w+') as file:
+                    json.dump([], file)
+            else:
+                data = list(data)
+                data.append(filter_word)
+
+                with open ('chat_filter.json', 'w+') as ex_file:
+                    json.dump(data, ex_file)
+                return 'Word {} has been added to filter list'.format(filter_word)
     return 'No permissions'
 
 
 def rmv_filter(message):
     remove_word = split_message(message)
 
-    allowed_role = ['458751363849912320', '458714226089918477'] # Admin, Bot
-    for role in message.author.roles:
+    allowed_role = load_allowed_role()
+    for role in message.server.roles:
         if role.id in allowed_role:
-            with open('chat_filter.txt', 'r') as file:
-                removal_list = file.readline()
-            removal_list = removal_list.split(' ')
-
-            for x in removal_list:
-                if x == remove_word:
-                    removal_list.remove(x)
-
-            with open('chat_filter.txt', 'w') as file:
-                file.writelines(removal_list)
-            return 'Word {} has been deleted from filter list'.format(remove_word)
+            try:
+                with open('chat_filter.json', 'r') as file:
+                    removal_list = json.load(file)
+            except json.decoder.JSONDecodeError:
+                with open('chat_filter.json', 'w+') as file:
+                    json.dump([], file)
+            else:
+                for x in removal_list:
+                    if x == remove_word:
+                        del_word = remove_word
+                try:
+                    if del_word:
+                        removal_list = list(removal_list)
+                        removal_list.remove(del_word)
+                except UnboundLocalError:
+                    return "Word {} is not on filter list".format(remove_word)
+                else:
+                    with open('chat_filter.json', 'w+') as file:
+                        json.dump(removal_list, file)
+                    return 'Word {} has been deleted from filter list'.format(remove_word)
     return 'No permissions'
 
