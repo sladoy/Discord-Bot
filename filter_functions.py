@@ -14,7 +14,7 @@ async def filter_word(client, message):
 
     else:
         allowed_role = load_allowed_role()
-        for role in message.author.roles:
+        for role in message.server.roles:
             if role.id in allowed_role:
                 return
 

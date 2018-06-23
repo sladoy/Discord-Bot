@@ -1,7 +1,8 @@
-from currency_functions import eur, usd
-from music_player import music_player
+from currency_functions import eur, usd, gbp
+from music_player import MusicBot
 from filter_functions import filter_word, add_filter, rmv_filter
 from role_functions import write_allowed_roles, show_my_id_role, delete_allowed_role
+from help import command_help
 
 
 async def messages(client, message):
@@ -21,6 +22,9 @@ async def messages(client, message):
     elif message.content.startswith('?eur'):
         await client.send_message (message.channel, eur())
 
+    elif message.content.startswith('?gbp'):
+        await client.send_message(message.channel, gbp())
+
     elif message.content.startswith('?add_filter'):
         await client.send_message(message.channel, add_filter(message))
 
@@ -28,7 +32,7 @@ async def messages(client, message):
         await client.send_message (message.channel, rmv_filter(message))
 
     elif message.content.startswith('?play'):
-        await music_player(client, message)
+        await MusicBot(client, message).start()
 
     elif message.content.startswith('?allow'):
         await client.send_message (message.channel, write_allowed_roles(message))
@@ -40,6 +44,6 @@ async def messages(client, message):
         await client.send_message(message.channel, show_my_id_role(message))
 
     elif message.content.startswith('?help'):
-        await client.send_message(message.channel, 1)
+        await client.send_message(message.channel, command_help())
 
     await filter_word (client, message)

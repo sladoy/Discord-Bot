@@ -19,14 +19,14 @@ def write_allowed_roles(message):
         with open('roles.json', 'w+') as file:
             json.dump({}, file)
 
-        tmp = {}
+        dict_role = {}
 
         for role in message.server.roles:
             if str(role) in str(role_list):
-                tmp[role_list] = str(role.id)
+                dict_role[role_list] = str(role.id)
 
         with open('roles.json', 'w+') as ex_file:
-            json.dump(tmp, ex_file)
+            json.dump(dict_role, ex_file)
 
     else:
         for role in message.server.roles:
@@ -83,11 +83,12 @@ def delete_allowed_role(message):
 
 
 def show_my_id_role(message):
-    l = {}
+    role_list = {}
 
     for role in message.server.roles:
         if message.author.top_role in message.server.roles:
-            l[str(message.author.top_role)] = [str(message.author.top_role.id)]
+            role_list[str(message.author.top_role)] = [str(message.author.top_role.id)]
 
-    return l
+    return role_list
+
 
