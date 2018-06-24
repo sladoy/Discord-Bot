@@ -1,4 +1,4 @@
-from currency_functions import eur, usd, gbp
+from currency_functions import currencies
 from music_player import MusicBot
 from filter_functions import filter_word, add_filter, rmv_filter
 from role_functions import write_allowed_roles, show_my_id_role, delete_allowed_role
@@ -16,14 +16,8 @@ async def messages(client, message):
         msg = 'My solemnly purpose is to serve you my Master'
         await client.send_message (message.channel, msg)
 
-    elif message.content.startswith('?usd'):
-        await client.send_message (message.channel, usd())
-
-    elif message.content.startswith('?eur'):
-        await client.send_message (message.channel, eur())
-
-    elif message.content.startswith('?gbp'):
-        await client.send_message(message.channel, gbp())
+    elif message.content.startswith('?curr'):
+        await client.send_message(message.channel, currencies(message))
 
     elif message.content.startswith('?add_filter'):
         await client.send_message(message.channel, add_filter(message))

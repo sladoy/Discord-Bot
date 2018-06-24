@@ -8,8 +8,7 @@ def command_help():
     ?play --
     ?add_filter -- 
     ?rmv_filter -- 
-    ?usd -- 
-    ?eur -- 
+    ?curr -- 
     '''
 
     return command_list
