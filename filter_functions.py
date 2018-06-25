@@ -3,34 +3,32 @@ import json
 
 
 async def filter_word(client, message):
-
     try:
         with open('chat_filter.json', 'r') as chat_file:
             chat_filter = json.load(chat_file)
 
-    except FileNotFoundError:
+    except (json.decoder.JSONDecodeError, FileNotFoundError):
         with open('chat_filter.json', 'w+') as file:
             json.dump([], file)
 
     else:
         allowed_role = load_allowed_role()
-        for role in message.server.roles:
-            if role.id in allowed_role:
+        for role in message.author.roles:
+            if str(role.id) in allowed_role:
                 return
-
-        contents = message.content.split (" ")
-        for word in contents:
-            if word.upper() in chat_filter:
-                await client.delete_message(message)
-                await client.send_message(message.channel, '**Message was deleted**')
+        else:
+            contents = message.content.split(' ')
+            for word in contents:
+                if word.upper() in chat_filter:
+                    await client.delete_message(message)
+                    await client.send_message(message.channel, '**Message was deleted**')
 
 
 def add_filter(message):
     allowed_role = load_allowed_role()
-    for role in message.server.roles:
-        if role.id in allowed_role:
+    for role in message.author.roles:
+        if str(role.id) in allowed_role:
             filter_word = split_message(message)
-
             try:
                 with open('chat_filter.json', 'r') as file:
                     data = json.load(file)
@@ -51,12 +49,12 @@ def rmv_filter(message):
     remove_word = split_message(message)
 
     allowed_role = load_allowed_role()
-    for role in message.server.roles:
-        if role.id in allowed_role:
+    for role in message.author.roles:
+        if str(role.id) in str(allowed_role):
             try:
                 with open('chat_filter.json', 'r') as file:
                     removal_list = json.load(file)
-            except json.decoder.JSONDecodeError:
+            except (json.decoder.JSONDecodeError, FileNotFoundError):
                 with open('chat_filter.json', 'w+') as file:
                     json.dump([], file)
             else:

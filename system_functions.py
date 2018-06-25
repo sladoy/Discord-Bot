@@ -7,7 +7,8 @@ from help import command_help
 
 async def messages(client, message):
 
-    client.process_commands (message)
+    await filter_word (client, message)
+
     if message.content.startswith ('?hello'):
         msg = 'Hello, {0.author.mention}'.format (message)
         await client.send_message (message.channel, msg)
@@ -40,4 +41,3 @@ async def messages(client, message):
     elif message.content.startswith('?help'):
         await client.send_message(message.channel, command_help())
 
-    await filter_word (client, message)

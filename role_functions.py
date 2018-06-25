@@ -15,7 +15,7 @@ def write_allowed_roles(message):
         with open('roles.json', 'r') as file:
             data = json.load(file)
 
-    except json.decoder.JSONDecodeError:
+    except (json.decoder.JSONDecodeError, FileNotFoundError):
         with open('roles.json', 'w+') as file:
             json.dump({}, file)
 
@@ -36,7 +36,7 @@ def write_allowed_roles(message):
         with open('roles.json', 'w+') as ex_file:
             json.dump(data, ex_file)
 
-    return 'Role is added to the allowed roles'
+        return 'Role is added to the allowed roles'
 
 
 def load_allowed_role():
@@ -46,14 +46,14 @@ def load_allowed_role():
     try:
         with open('roles.json', 'r') as file:
             data = json.load(file)
-    except json.decoder.JSONDecodeError:
+    except (json.decoder.JSONDecodeError, FileNotFoundError):
         with open('roles.json', 'w+') as file:
             json.dump({}, file)
     else:
         for value in data.values():
             value_list.append(value)
 
-    return value_list
+        return value_list
 
 
 def delete_allowed_role(message):
@@ -61,7 +61,7 @@ def delete_allowed_role(message):
     try:
         with open('roles.json', 'r') as file:
             data = json.load(file)
-    except json.decoder.JSONDecodeError:
+    except (json.decoder.JSONDecodeError, FileNotFoundError):
         with open('roles.json', 'w+') as file:
             json.dump({}, file)
     else:
