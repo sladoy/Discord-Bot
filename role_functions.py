@@ -49,6 +49,7 @@ def load_allowed_role():
     except (json.decoder.JSONDecodeError, FileNotFoundError):
         with open('roles.json', 'w+') as file:
             json.dump({}, file)
+
     else:
         for value in data.values():
             value_list.append(value)

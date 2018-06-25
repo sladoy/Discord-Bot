@@ -10,7 +10,7 @@ async def messages(client, message):
     await filter_word (client, message)
 
     if message.content.startswith ('?hello'):
-        msg = 'Hello, {0.author.mention}'.format (message)
+        msg = 'Hello, {0.author.mention}  '.format (message)
         await client.send_message (message.channel, msg)
 
     elif message.content.startswith ('?bot'):
@@ -28,6 +28,9 @@ async def messages(client, message):
 
     elif message.content.startswith('?play'):
         await MusicBot(client, message).start()
+
+    elif message.content.startswith('?stop'):
+        await MusicBot(client, message).leave()
 
     elif message.content.startswith('?allow'):
         await client.send_message (message.channel, write_allowed_roles(message))

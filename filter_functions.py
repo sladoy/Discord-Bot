@@ -50,7 +50,7 @@ def rmv_filter(message):
 
     allowed_role = load_allowed_role()
     for role in message.author.roles:
-        if str(role.id) in str(allowed_role):
+        if str(role.id) in allowed_role:
             try:
                 with open('chat_filter.json', 'r') as file:
                     removal_list = json.load(file)

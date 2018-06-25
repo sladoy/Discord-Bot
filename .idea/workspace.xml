@@ -9,12 +9,55 @@
   <component name="ChangeListManager">
     <list default="true" id="a78d346c-9a4e-4b10-aa26-70a4656824e4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_filter.json" beforeDir="false" afterPath="$PROJECT_DIR$/chat_filter.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filter_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/filter_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/help.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/role_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/role_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roles.json" beforeDir="false" afterPath="$PROJECT_DIR$/roles.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/system_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets-5.0.1.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets-5.0.1.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets-5.0.1.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets-5.0.1.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets-5.0.1.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets-5.0.1.dist-info/zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/compatibility.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/compatibility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/extensions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/extensions/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/extensions/permessage_deflate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/extensions/test_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/extensions/test_permessage_deflate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/framing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/framing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/handshake.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/handshake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/headers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/http.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/http.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/protocol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/py35/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/py35/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/py35/_test_client_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/py36/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/py36/_test_client_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/py36/protocol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/speedups.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/speedups.cp36-win32.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/speedups.cp36-win32.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_client_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_client_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_framing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_framing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_handshake.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_handshake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_headers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_http.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_http.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_localhost.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_protocol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_uri.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_uri.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/test_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/uri.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/uri.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/websockets/version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,71 +67,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filter_functions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filter_functions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="help.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/help.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="system_functions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system_functions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="role_functions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role_functions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="music_player.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/music_player.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -115,20 +94,20 @@
         <option value="$PROJECT_DIR$/chat_filter.txt" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/currency_functions.py" />
-        <option value="$PROJECT_DIR$/help.py" />
-        <option value="$PROJECT_DIR$/music_player.py" />
-        <option value="$PROJECT_DIR$/role_functions.py" />
-        <option value="$PROJECT_DIR$/system_functions.py" />
         <option value="$PROJECT_DIR$/chat_filter.json" />
-        <option value="$PROJECT_DIR$/roles.json" />
+        <option value="$PROJECT_DIR$/role_functions.py" />
         <option value="$PROJECT_DIR$/filter_functions.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/music_player.py" />
+        <option value="$PROJECT_DIR$/system_functions.py" />
+        <option value="$PROJECT_DIR$/help.py" />
+        <option value="$PROJECT_DIR$/roles.json" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="315" />
-    <option name="y" value="63" />
+    <option name="x" value="594" />
+    <option name="y" value="60" />
     <option name="width" value="1208" />
     <option name="height" value="965" />
   </component>
@@ -290,15 +269,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="315" y="63" width="1208" height="965" extended-state="0" />
-    <editor active="true" />
+    <frame x="594" y="60" width="1208" height="965" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25083894" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25083894" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51510066" side_tool="true" visible="true" weight="0.3070588" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5218121" side_tool="true" visible="true" weight="0.3070588" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48489934" visible="true" weight="0.3070588" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.47818792" visible="true" weight="0.3070588" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -318,11 +296,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chat_filter.txt" />
     <entry file="file://$PROJECT_DIR$/filter_functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -538,10 +515,47 @@
     <entry file="file://$PROJECT_DIR$/json.roles" />
     <entry file="file://$PROJECT_DIR$/chat_filter.txt" />
     <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/music_player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="80" column="61" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/currency_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-137">
+        <state relative-caret-position="68">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="69" lean-forward="true" selection-start-column="69" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -552,54 +566,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/roles.json">
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/help.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/music_player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filter_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        <state relative-caret-position="238">
+          <caret line="20" column="71" lean-forward="true" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/help.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        <state relative-caret-position="252">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
